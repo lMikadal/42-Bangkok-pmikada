@@ -6,7 +6,7 @@
 /*   By: pmikada <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 18:45:16 by pmikada           #+#    #+#             */
-/*   Updated: 2022/06/08 20:20:05 by pmikada          ###   ########.fr       */
+/*   Updated: 2022/06/13 14:46:59 by pmikada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	sum;
 	size_t	i;
 
+	if (size > sizeof(size_t))
+		return (0);
 	sum = count * size;
 	c = (void *)malloc(sum);
 	if (c == NULL)

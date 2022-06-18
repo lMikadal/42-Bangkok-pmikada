@@ -6,13 +6,13 @@
 /*   By: pmikada <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 12:10:36 by pmikada           #+#    #+#             */
-/*   Updated: 2022/06/11 21:40:08 by pmikada          ###   ########.fr       */
+/*   Updated: 2022/06/18 00:23:52 by pmikada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count_word(char const *s, char c)
+static int	ft_count_word(char const *s, char c)
 {
 	int	i;
 	int	word;
@@ -28,7 +28,7 @@ int	ft_count_word(char const *s, char c)
 	return (word);
 }
 
-char	*ft_loc_string(char const *s, int start, int end)
+static char	*ft_loc_string(char const *s, int start, int end)
 {
 	char	*m;
 	int		i;

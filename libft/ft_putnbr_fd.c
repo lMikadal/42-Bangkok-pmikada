@@ -6,13 +6,13 @@
 /*   By: pmikada <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/12 14:22:42 by pmikada           #+#    #+#             */
-/*   Updated: 2022/06/12 14:51:08 by pmikada          ###   ########.fr       */
+/*   Updated: 2022/06/18 00:34:31 by pmikada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_group_print(int n, int fd)
+static void	ft_group_print(int n, int fd)
 {
 	if (n == 0)
 		return ;

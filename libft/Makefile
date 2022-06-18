@@ -6,7 +6,7 @@
 #    By: pmikada <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/01 19:14:30 by pmikada           #+#    #+#              #
-#    Updated: 2022/06/12 14:22:32 by pmikada          ###   ########.fr        #
+#    Updated: 2022/06/18 11:42:14 by pmikada          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,12 +21,22 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strle
 
 OBJS = $(SRCS:.c=.o)
 
+BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
+	ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
+OBJS_B = $(BONUS:.c=.o)
+
 CFLAGS = -Wall -Wextra -Werror
+
+GCC = gcc
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	 ar rc $(NAME) *.o
+	 ar rc $(NAME) $(OBJS)
+
+bonus: $(OBJS_B)
+	 ar rc $(NAME) $(OBJS_B)
 
 clean:
 	rm -f *.o
