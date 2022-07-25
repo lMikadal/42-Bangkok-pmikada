@@ -6,7 +6,7 @@
 /*   By: pmikada <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 14:24:10 by pmikada           #+#    #+#             */
-/*   Updated: 2022/07/12 00:01:18 by pmikada          ###   ########.fr       */
+/*   Updated: 2022/07/12 22:32:05 by pmikada          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
 
 typedef struct s_buff
 {
